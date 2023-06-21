@@ -3,9 +3,14 @@
 ### In the terminal do:
 <code>cd my-app</code>
 
-<code>nvm install 16 && nvm use 16</code>
-
 <code>npm install</code>
+
+### Update the start and build scripts in package.json
+
+```json
+"start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+"build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
+```
 
 ### You can then run the project with the command
 <code>npm start</code>
